@@ -1,5 +1,25 @@
+@import 'tailwindcss';
+
 * {
   font-family: 'League Spartan', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+@custom-variant theme-default {
+  &:where([data-theme='default'] *) {
+    @slot;
+  }
+}
+
+@custom-variant theme-light {
+  &:where([data-theme='light'] *) {
+    @slot;
+  }
+}
+
+@custom-variant theme-dark {
+  &:where([data-theme='dark'] *) {
+    @slot;
+  }
 }
