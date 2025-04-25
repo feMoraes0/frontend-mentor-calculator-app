@@ -4,10 +4,36 @@ import { numpadNumbers, numpadEnd } from './utils/numpad';
 type ThemeType = 'default' | 'light' | 'dark';
 
 const App = () => {
+  const operators = ['+', '-', 'x', '/'];
   const [theme] = useState<ThemeType>('default');
+  const [displayValue, setDisplayValue] = useState<string>('0');
 
-  const onPadClick = (item: string | number) => {
-    console.log('item', item);
+  const onPadClick = (item: string) => {
+    if (item === 'RESET') {
+      setDisplayValue('0');
+      return;
+    }
+
+    if (item === 'DEL') {
+      setDisplayValue((prev) => {
+        const base = prev.slice(0, -1);
+        return !base.length ? '0' : base;
+      });
+      return;
+    }
+
+    if (operators.includes(item)) {
+      setDisplayValue((prev) => prev + ' ' + item + ' ');
+      return;
+    }
+
+    if (item === '=') {
+      const items = displayValue.split(' ');
+      console.log('items', items);
+      return;
+    }
+
+    setDisplayValue((prev) => (prev === '0' ? item : prev + item));
   };
 
   useEffect(() => {
@@ -55,7 +81,7 @@ const App = () => {
           theme-dark:bg-[#1E0936] theme-dark:text-[#FFE53D]
         "
       >
-        399,981
+        {displayValue}
       </h1>
       <section
         className="
@@ -84,7 +110,7 @@ const App = () => {
                         theme-dark:shadow-[0_4px_0_#881C9E] theme-dark:bg-[#331C4D] theme-dark:text-[#FFE53D]'
                   }
                 `}
-                onClick={() => onPadClick(item)}
+                onClick={() => onPadClick(String(item))}
               >
                 {item}
               </button>
