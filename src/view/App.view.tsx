@@ -66,7 +66,7 @@ const AppView = ({
                     item === 'DEL'
                       ? 'text-[20px] tracking-[-0.33px] \
                         theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] \
-                        theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] \
+                        theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF] \
                         theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF]'
                       : 'text-[32px] \
                         theme-default:shadow-[0_4px_0_#B3A497] theme-default:bg-[#EAE3DC] theme-default:text-[#434A59] \
