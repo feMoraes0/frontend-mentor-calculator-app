@@ -5,8 +5,16 @@ import simpleCalculation from '../usecase/simpleCalculation';
 
 const AppController = () => {
   const operators = ['+', '-', 'x', '/'];
-  const [theme, setTheme] = useState<ThemeType>('default');
+  const [theme, setTheme] = useState<ThemeType>('dark');
   const [displayValue, setDisplayValue] = useState<string>('0');
+
+  const triggerThemeChange = () => {
+    setTheme((prev) => {
+      if (prev === 'default') return 'light';
+      if (prev === 'light') return 'dark';
+      return 'default';
+    });
+  };
 
   const onPadClick = (item: string) => {
     if (item === 'RESET') {
@@ -47,7 +55,7 @@ const AppController = () => {
       theme={theme}
       displayValue={displayValue}
       onPadClick={onPadClick}
-      onThemeChange={setTheme}
+      triggerThemeChange={triggerThemeChange}
     />
   );
 };

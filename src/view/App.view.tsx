@@ -6,14 +6,14 @@ type AppViewProps = {
   theme: ThemeType;
   displayValue: string;
   onPadClick: (item: string) => void;
-  onThemeChange: (theme: ThemeType) => void;
+  triggerThemeChange: () => void;
 };
 
 const AppView = ({
   theme,
   displayValue,
   onPadClick,
-  onThemeChange,
+  triggerThemeChange,
 }: AppViewProps) => {
   return (
     <main
@@ -35,7 +35,7 @@ const AppView = ({
         >
           calc
         </a>
-        <ThemeToggle theme={theme} onThemeChange={onThemeChange} />
+        <ThemeToggle theme={theme} triggerThemeChange={triggerThemeChange} />
       </header>
       <h1
         className="
