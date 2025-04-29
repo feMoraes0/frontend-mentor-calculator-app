@@ -5,7 +5,7 @@ import simpleCalculation from '../usecase/simpleCalculation';
 
 const AppController = () => {
   const operators = ['+', '-', 'x', '/'];
-  const [theme, setTheme] = useState<ThemeType>('dark');
+  const [theme, setTheme] = useState<ThemeType>('default');
   const [displayValue, setDisplayValue] = useState<string>('0');
 
   const triggerThemeChange = () => {
