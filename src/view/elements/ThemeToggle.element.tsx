@@ -22,6 +22,7 @@ const ThemeToggle = ({ triggerThemeChange }: ThemeToggleProps) => {
         <div className="w-full flex flex-row justify-between px-[9px]">
           {new Array(3).fill('').map((_, index) => (
             <span
+              key={index}
               className="
                 text-[12px] font-bold
                 theme-default:text-[#FFFFFF]
