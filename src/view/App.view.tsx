@@ -73,13 +73,13 @@ const AppView = ({
                     ${
                       item === 'DEL'
                         ? 'text-[20px] tracking-[-0.33px] md:text-[28px] md:leading-[40px] md:tracking-[-0.47px] \
-                          theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] \
-                          theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF] \
-                          theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF]'
+                          theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] theme-default:hover:bg-[#A2B2E1] \
+                          theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF] theme-light:hover:bg-[#62B5BC] \
+                          theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF] theme-dark:hover:bg-[#8631AF]'
                         : 'text-[32px] md:text-[40px] \
-                          theme-default:shadow-[0_4px_0_#B3A497] theme-default:bg-[#EAE3DC] theme-default:text-[#434A59] \
-                          theme-light:shadow-[0_4px_0_#A79E91] theme-light:bg-[#E5E4E1] \
-                          theme-dark:shadow-[0_4px_0_#881C9E] theme-dark:bg-[#331C4D] theme-dark:text-[#FFE53D]'
+                          theme-default:shadow-[0_4px_0_#B3A497] theme-default:bg-[#EAE3DC] theme-default:text-[#434A59] theme-default:hover:bg-[#FFFFFE] \
+                          theme-light:shadow-[0_4px_0_#A79E91] theme-light:bg-[#E5E4E1] theme-light:hover:bg-[#FFFFFF] \
+                          theme-dark:shadow-[0_4px_0_#881C9E] theme-dark:bg-[#331C4D] theme-dark:text-[#FFE53D] theme-dark:hover:bg-[#6C34AC]'
                     }
                   `}
                   onClick={() => onPadClick(String(item))}
@@ -104,12 +104,12 @@ const AppView = ({
                       md:text-[28px] md:leading-[40px] md:tracking-[-0.47px]
                       ${
                         item === 'RESET'
-                          ? 'theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] \
-                            theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF]\
-                            theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF]'
-                          : 'theme-default:shadow-[0_4px_0_#93261A] theme-default:bg-[#D03F2F] theme-default:text-[#FFFFFF] \
-                            theme-light:shadow-[0_4px_0_#873901] theme-light:bg-[#C85402] theme-light:text-[#FFFFFF] \
-                            theme-dark:shadow-[0_4px_0_#6CF9F1] theme-dark:bg-[#00DED0] theme-dark:text-[#1A2327]'
+                          ? 'theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] theme-default:hover:bg-[#A2B2E1] \
+                            theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF] theme-light:hover:bg-[#62B5BC] \
+                            theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF] theme-dark:hover:bg-[#8631AF]'
+                          : 'theme-default:shadow-[0_4px_0_#93261A] theme-default:bg-[#D03F2F] theme-default:text-[#FFFFFF] theme-default:hover:bg-[#F96B5B] \
+                            theme-light:shadow-[0_4px_0_#873901] theme-light:bg-[#C85402] theme-light:text-[#FFFFFF] theme-light:hover:bg-[#FF8A38] \
+                            theme-dark:shadow-[0_4px_0_#6CF9F1] theme-dark:bg-[#00DED0] theme-dark:text-[#1A2327] theme-dark:hover:bg-[#93FFF8]'
                       }
 
                     `}

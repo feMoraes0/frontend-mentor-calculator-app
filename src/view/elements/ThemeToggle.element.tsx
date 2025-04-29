@@ -41,14 +41,14 @@ const ThemeToggle = ({ triggerThemeChange }: ThemeToggleProps) => {
             theme-light:bg-[#D2CDCD]
             theme-dark:bg-[#1E0936]
           "
-          onClick={() => triggerThemeChange()}
         >
           <div
+            onClick={() => triggerThemeChange()}
             className="
               w-4 h-4 rounded-full
-              theme-default:bg-[#D03F2F]
-              theme-light:bg-[#C85402] theme-light:ml-[23px]
-              theme-dark:bg-[#00DED0] theme-dark:ml-[45px]
+              theme-default:bg-[#D03F2F] theme-default:hover:bg-[#F96B5B]
+              theme-light:bg-[#C85402] theme-light:ml-[23px] theme-light:hover:bg-[#FF8A38]
+              theme-dark:bg-[#00DED0] theme-dark:ml-[45px] theme-dark:hover:bg-[#93FFF8]
             "
           />
         </div>
