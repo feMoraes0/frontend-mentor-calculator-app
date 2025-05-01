@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cy:open": "cd ./tests && cypress open"
+    "cy:open": "cypress open --project tests"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
