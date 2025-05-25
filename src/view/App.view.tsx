@@ -27,6 +27,7 @@ const AppView = ({
       <div className="md:w-[540px]">
         <header className="flex flex-row justify-between items-end mb-8">
           <a
+            data-test="calc-logo"
             href="/"
             className="
               font-bold text-[32px] tracking-[-0.53px] leading-[29px] mb-[3px]
@@ -39,6 +40,7 @@ const AppView = ({
           <ThemeToggle theme={theme} triggerThemeChange={triggerThemeChange} />
         </header>
         <h1
+          data-test="result-display"
           className="
             text-[40px] leading-[37px] font-bold tracking-[-0.67px] w-full px-6 pt-[29px] pb-[22px] rounded-[10px] text-right mb-6
             md:text-[56px] md:leading-[52px] md:tracking-[-0.93px] md:pt-10 md:px-8 md:pb-9
@@ -66,6 +68,8 @@ const AppView = ({
             {numpadNumbers.map((item, index) => {
               return (
                 <button
+                  data-test="numpad-buttons"
+                  data-testid={`numpad-id-${index}`}
                   key={index}
                   className={`
                     rounded-[5px] font-bold tracking-[-0.53px] px-3 pt-[10px] h-[60px] flex items-center justify-center cursor-pointer
@@ -98,6 +102,8 @@ const AppView = ({
             {numpadEnd.map((item, index) => {
               return (
                 <button
+                  data-test="numpad-buttons"
+                  data-testid={`numpad-end-id-${index}`}
                   key={index}
                   className={`
                       rounded-[5px] font-bold text-[20px] tracking-[-0.33px] px-3 pt-[10px] h-[60px] flex items-center justify-center cursor-pointer
