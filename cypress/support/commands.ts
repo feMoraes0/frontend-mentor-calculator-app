@@ -39,3 +39,10 @@
 Cypress.Commands.add('getByDataTest', (selector: string): Cypress.Chainable => {
   return cy.get(`[data-test="${selector}"]`);
 });
+
+Cypress.Commands.add(
+  'getByDataTestId',
+  (selector: string): Cypress.Chainable => {
+    return cy.get(`[data-testid="${selector}"]`);
+  },
+);
