@@ -17,4 +17,4 @@ export const numpadNumbers = [
   'x',
 ];
 
-export const numpadEnd = ['RESET', '='];
+export const numpadEnd = ['reset', '='];

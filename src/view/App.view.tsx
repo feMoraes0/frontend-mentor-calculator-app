@@ -69,7 +69,7 @@ const AppView = ({
               return (
                 <button
                   data-test="numpad-buttons"
-                  data-testid={`numpad-id-${index}`}
+                  data-testid={`numpad-id-${item}`}
                   key={index}
                   className={`
                     rounded-[5px] font-bold tracking-[-0.53px] px-3 pt-[10px] h-[60px] flex items-center justify-center cursor-pointer
@@ -103,13 +103,13 @@ const AppView = ({
               return (
                 <button
                   data-test="numpad-buttons"
-                  data-testid={`numpad-end-id-${index}`}
+                  data-testid={`numpad-id-${item}`}
                   key={index}
                   className={`
                       rounded-[5px] font-bold text-[20px] tracking-[-0.33px] px-3 pt-[10px] h-[60px] flex items-center justify-center cursor-pointer
                       md:text-[28px] md:leading-[40px] md:tracking-[-0.47px]
                       ${
-                        item === 'RESET'
+                        item === 'reset'
                           ? 'theme-default:shadow-[0_4px_0_#414E73] theme-default:bg-[#647198] theme-default:text-[#FFFFFF] theme-default:hover:bg-[#A2B2E1] \
                             theme-light:shadow-[0_4px_0_#1B6066] theme-light:bg-[#378187] theme-light:text-[#FFFFFF] theme-light:hover:bg-[#62B5BC] \
                             theme-dark:shadow-[0_4px_0_#BE15F4] theme-dark:bg-[#56077C] theme-dark:text-[#FFFFFF] theme-dark:hover:bg-[#8631AF]'
@@ -121,7 +121,7 @@ const AppView = ({
                     `}
                   onClick={() => onPadClick(item)}
                 >
-                  {item}
+                  {item.toUpperCase()}
                 </button>
               );
             })}

@@ -17,7 +17,7 @@ const AppController = () => {
   };
 
   const onPadClick = (item: string) => {
-    if (item === 'RESET') {
+    if (item === 'reset') {
       setDisplayValue('0');
       return;
     }
