@@ -46,3 +46,11 @@ Cypress.Commands.add(
     return cy.get(`[data-testid="${selector}"]`);
   },
 );
+
+Cypress.Commands.add('setDesktopViewport', () => {
+  return cy.viewport(1440, 900);
+});
+
+Cypress.Commands.add('setMobileViewport', () => {
+  return cy.viewport(375, 667);
+});
