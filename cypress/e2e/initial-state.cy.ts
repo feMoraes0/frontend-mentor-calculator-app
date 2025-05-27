@@ -1,7 +1,7 @@
 describe('Initial application state', () => {
   context('Desktop layout', () => {
     beforeEach(() => {
-      cy.viewport(1440, 900);
+      cy.setDesktopViewport();
       cy.visit('/');
     });
 
@@ -13,7 +13,7 @@ describe('Initial application state', () => {
 
   context('Mobile layout', () => {
     beforeEach(() => {
-      cy.viewport(375, 667);
+      cy.setMobileViewport();
       cy.visit('/');
     });
 
