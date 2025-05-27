@@ -13,7 +13,7 @@ describe('Initial application state', () => {
 
   context('Mobile layout', () => {
     beforeEach(() => {
-      cy.viewport(1440, 900);
+      cy.viewport(375, 667);
       cy.visit('/');
     });
 
