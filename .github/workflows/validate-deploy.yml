@@ -12,39 +12,38 @@ on:
       - master
 
 jobs:
-  build:
+  install:
     runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: ./app
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Cypress install
+      - name: Build
         uses: cypress-io/github-action@v6
         with:
           # Disable running of tests within install job
           runTests: false
           build: npm run build
-
       - name: Save build folder
         uses: actions/upload-artifact@v4
         with:
           name: build
           if-no-files-found: error
-          path: build
+          path: app/build
 
   cypress:
     runs-on: ubuntu-24.04
-    needs: build
+    needs: install
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Download the build folder
         uses: actions/download-artifact@v4
         with:
           name: build
           path: build
-
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
