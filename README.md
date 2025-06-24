@@ -11,9 +11,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
-  <!-- - [Continued development](#continued-development) -->
 - [Author](#author)
-<!-- - [Acknowledgments](#acknowledgments) -->
 
 ## Overview
 
@@ -28,13 +26,14 @@ Users should be able to:
 
 ### Screenshot
 
-Nothing to see yet.
-![](./screenshot.jpg)
+![https://frontend-mentor-calculator-app-plum.vercel.app/](./.docs/screenshot_01.png)
+![https://frontend-mentor-calculator-app-plum.vercel.app/](./.docs/screenshot_02.png)
+![https://frontend-mentor-calculator-app-plum.vercel.app/](./.docs/screenshot_03.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](hhttps://github.com/feMoraes0/frontend-mentor-calculator-app)
+- Live Site URL: [Vercel Live URL](https://frontend-mentor-calculator-app-plum.vercel.app/)
 
 ## My process
 
@@ -62,9 +61,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - GitHub - [feMoraes0](https://github.com/feMoraes0)
 - Frontend Mentor - [@feMoraes0](https://www.frontendmentor.io/profile/feMoraes0)
-
-<!-- ## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.** -->
