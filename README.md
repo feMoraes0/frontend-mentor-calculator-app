@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](hhttps://github.com/feMoraes0/frontend-mentor-calculator-app)
+- Solution URL: [GitHub Repository](https://github.com/feMoraes0/frontend-mentor-calculator-app)
 - Live Site URL: [Vercel Live URL](https://frontend-mentor-calculator-app-plum.vercel.app/)
 
 ## My process
